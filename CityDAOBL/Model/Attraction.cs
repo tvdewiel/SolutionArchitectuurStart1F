@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CityDAOBL.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace CityDAOBL.Model
             Location = location;
             Organizer = organizer;
         }
-        public Attraction(int iD, string name, string description, string type, string location, string organizer)
+        public Attraction(int? iD, string name, string description, string type, string location, string organizer)
         {
             Id = iD;
             Name = name;

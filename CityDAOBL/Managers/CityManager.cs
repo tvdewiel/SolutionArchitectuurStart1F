@@ -1,4 +1,5 @@
 ﻿using CityDAOBL.Exceptions;
+using CityDAOBL.Mappers;
 using CityDAOBL.Model;
 using CityDAODL.DAOs;
 using CityDAODL.Model;
@@ -19,7 +20,7 @@ namespace CityDAOBL.Managers
         {
             this.cityDAO = cityDAO;
             this.attractionDAO = attractionDAO;
-            cityMapper = new CityMapper(cityDAO, attractionDAO);
+            cityMapper = new CityMapper(attractionDAO);
         }
         private CityMapper cityMapper;
 
